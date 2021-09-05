@@ -24,6 +24,7 @@
     <modules>
         <module>product-api-functional</module>
         <module>product-api-annotation</module>
+        <module>webclient-product-api</module>
     </modules>
 
 </project>
