@@ -33,7 +33,7 @@ public class ApiFunctionalConfig {
                                                       .or(contentType(MediaType.APPLICATION_JSON))
                                                       .or(RequestPredicates.accept(MediaType.TEXT_EVENT_STREAM)),
                                               nestestBuilder -> nestestBuilder.GET("/events", productHandler::getProductEvents)
-                                                      .GET("/{id}s", productHandler::getProduct)
+                                                      .GET("/{id}", productHandler::getProduct)
                                                       .GET(productHandler::getAllProducts)
                                                       .PUT("/{id}", productHandler::updateProduct)
                                                       .POST(productHandler::saveProduct))
